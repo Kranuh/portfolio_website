@@ -32,21 +32,46 @@
   width: 100%;
 }
 
-.typed-fade-out{
+.typed-fade-out {
   opacity: 0;
   transition: opacity .25s;
   -webkit-animation: 0;
   animation: 0;
 }
 
-.typed-cursor{
+.typed-cursor {
   opacity: 1;
-  animation: typedjsBlink 0.7s infinite;
-  -webkit-animation: typedjsBlink 0.7s infinite;
-  animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink .7s infinite;
+  animation: typedjsBlink .7s infinite;
+  animation-name: typedjsBlink;
+  animation-duration: .7s;
+  animation-timing-function: initial;
+  animation-delay: initial;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-fill-mode: initial;
+  animation-play-state: initial;
   color: #fff;
   font-family: 'Roboto Mono', monospace;
   font-size: 6vw;
+}
+
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0.0;
+  }
+}
+
+@-webkit-keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media(max-width: 500px) {
