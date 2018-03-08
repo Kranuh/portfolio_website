@@ -1,0 +1,56 @@
+.header_text {
+  font-family: 'Roboto Mono', monospace;
+  color: #ffffff;
+  font-size: 6vw;
+}
+
+.header_background {
+  background-color: #37474f;
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.vertical-center {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.vertical-bottom {
+  margin-top: auto;
+}
+
+.vertical-top {
+  margin-bottom: auto;
+}
+
+.match_parent {
+  height: 100%;
+  width: 100%;
+}
+
+.typed-fade-out{
+  opacity: 0;
+  transition: opacity .25s;
+  -webkit-animation: 0;
+  animation: 0;
+}
+
+.typed-cursor{
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 6vw;
+}
+
+@media(max-width: 500px) {
+  .header_background {
+    height: 40vh;
+  }
+}
