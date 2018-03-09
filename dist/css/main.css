@@ -9,6 +9,37 @@
   height: 100vh;
 }
 
+.page_background {
+  background-color: #263238;
+  height: 100%;
+  margin: 0;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    background-color: #FAFAFA;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.first_card_background {
+  height: 40vh;
+  margin-top: 4vh;
+  margin-left: 0vh;
+  margin-right: 0vh;
+}
+
+.container-fluid {
+   padding:0;
+   padding-bottom:0;
+   margin:0;
+}
+
 .flex {
   display: flex;
 }
@@ -76,6 +107,15 @@
 
 @media(max-width: 500px) {
   .header_background {
-    height: 40vh;
+    height: 60vh;
+  }
+}
+
+@media(max-width: 500px) {
+  .first_card_background {
+    height: 30vh;
+    margin-top: -8vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
   }
 }
