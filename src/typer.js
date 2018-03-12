@@ -1,7 +1,3 @@
-// Can also be included with a regular script tag
-import Rellax from 'rellax';
-var rellax = new Rellax('.rellax');
-
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -26,6 +22,7 @@ TxtRotate.prototype.tick = function() {
 
   // Modification; let the anim run a bit longer based on the text size
   var speedModifier = 200 - (fullTxt.length * 3);
+  console.log(speedModifier);
 
   var that = this;
   var delta = speedModifier - Math.random() * 100;
@@ -44,20 +41,4 @@ TxtRotate.prototype.tick = function() {
   setTimeout(function() {
     that.tick();
   }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
 };

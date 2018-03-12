@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rellax": "^1.6.0",
-    "typed.js": "^2.0.6"
+    "ityped": "^1.0.1",
+    "rellax": "^1.6.0"
   },
   "devDependencies": {
     "webpack": "^4.1.1",

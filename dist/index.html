@@ -10,51 +10,79 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/text.css">
 </head>
 
 <body>
   <!-- main container -->
-  <div class="container-fluid" style="height:100%;">
-    <div class="row" style="height:100%;">
-      <div class="container-fluid header_background">
-        <div class="container match_parent">
-          <!-- intro name -->
-          <div class="row vertical-center" style="height:50%;">
-            <div class="vertical-bottom col-xs-8 col-sm-8 col-md-10 offset-xs-2 offset-sm-2 offset-md-1">
-              <display class="header_text">Hi, I'm Tim and I</display>
-            </div>
-          </div>
+  <div class="container-fluid page_background">
 
-          <!-- typed.js -->
-          <div class="row vertical-center" style="height:300px;">
-            <div class="vertical-top col-xs-8 col-sm-8 col-md-10 offset-xs-2 offset-sm-2 offset-md-1">
-              <h1 class="element header_text" style="display:inline;"></h1>
+    <!-- grid lines -->
+    <div class="row line_row">
+      <div class="col-4" style="height:100%;">
+        <div class="line" style="opacity:0.5;"></div>
+      </div>
+      <div class="col-3" style="height:100%;">
+        <div class="line" style="opacity:0.4;"></div>
+      </div>
+      <div class="col-2" style="height:100%;">
+        <div class="line" style="opacity:0.3;"></div>
+      </div>
+      <div class="col-1" style="height:100%;">
+        <div class="line" style="opacity:0.2;"></div>
+      </div>
+      <div class="col-1" style="height:100%;">
+        <div class="line" style="opacity:0.1;"></div>
+      </div>
+    </div>
+
+    <!-- intro name -->
+    <div class="row mobile_padding header_background_top" data-rellax-zindex="0">
+      <div class="bottom_align col-xs-8 col-sm-8 col-md-10 offset-xs-2 offset-sm-2 offset-md-1" style="height:100%;">
+        <display class="header_text">Hi, I'm Tim and I</display>
+      </div>
+    </div>
+
+    <div class="row mobile_padding header_background_bottom" data-rellax-zindex="0">
+      <div class="col-xs-8 col-sm-8 col-md-10 offset-xs-2 offset-sm-2 offset-md-1" style="height:100%;">
+        <h1><span class="txt-rotate header_text" data-period="200" data-rotate='[ "> am an Android Developer.", "> create User Experiences.", "> love movies.", "> always use Git.","> am interested in new technologies.",">  built this website."]'></span></h1>
+      </div>
+    </div>
+
+    <!-- CARD VIEW 1 -->
+    <div class="row rellax" data-rellax-zindex="2" data-rellax-speed="6">
+      <div class="first_section col-12" style="display:block;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="first_section_h1">A little bit about me</h1>
+                </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
 
+    <!-- spacer -->
+    <div class="row" style="height:10vh;"></div>
 
-    <div class="row page_background" style="height:100%;"></div>
-      <!-- CARD VIEW 1 -->
-      <div class="col-12">
-        <div class="row match_parent" >
-          <div class="col-xs-12 col-md-10 offset-md-1 relax card first_card_background" data-rellax-speed="7" data-rellax-zindex="1">
+    <!-- spacer -->
+    <div class="row" style="height:10vh;"></div>
 
-          </div>
-        </div>
+    <!-- spacer -->
+    <div class="row" style="height:10vh;"></div>
 
+    <!-- spacer -->
+    <div class="row" style="height:10vh;"></div>
 
-        <!-- spacer -->
-        <div class="row match_parent" style="margin-top:10vh;"></div>
+    <!-- spacer -->
+    <div class="row" style="height:10vh;"></div>
 
+    <!-- spacer -->
+    <div class="row" style="height:10vh;"></div>
 
-        <div class="row match_parent" style="background-color:pink;height:200px;"></div>
+    <div class="row footer" style="z-index:1;"></div>
 
-      </div>
-
-    </div>
+  </div>
 
   </div>
 

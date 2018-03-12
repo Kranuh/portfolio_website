@@ -1,0 +1,11 @@
+#first_section_h1 {
+  color: #000f;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2em;
+}
+
+@media(max-width: 576px) {
+  #first_section_h1 {
+    height: 3em;
+  }
+}
