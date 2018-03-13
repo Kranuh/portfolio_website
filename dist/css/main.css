@@ -28,18 +28,20 @@
 .first_section {
   background-color: #FFEB3B;
   width: 100%;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  z-index: 2;
+  position: fixed;
 }
 
 .card.custom_bg_card {
   /* Add shadows to create the "card" effect */
-  background-color: #37474F; !important;
+  background-color: #37474F;
+   !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
 
 /* On mouse-over, add a deeper shadow */
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -78,15 +80,22 @@
   height: 20vh;
   background-color: #37474f;
   position: relative;
+  z-index: 5;
 }
 
 /* mobile padding applied on mobile devices instead of 1 column offset */
+
 .mobile_padding {
   padding-left: 0vh;
   padding-right: 0vh;
 }
 
+.default_padding {
+  padding: 8vh;
+}
+
 /* for when you want to have padding but less than a column, padding doubles on mobile */
+
 .small_margin {
   margin-left: 4vh;
   margin-right: 4vh;
@@ -101,14 +110,24 @@
   margin: 0;
 }
 
-.row.line_row {
+.row.bg_row {
   position: fixed;
   height: 100%;
   width: 100%;
   bottom: 0;
-  overflow: auto;
   top: 0;
   margin: 0;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  position: fixed;
+  margin-left: -50px;
+  top: 80vh;
+  /* width and height can be anything, as long as they're equal */
 }
 
 @media(max-width: 576px) {
@@ -132,6 +151,12 @@
 }
 
 @media(max-width: 576px) {
+  .default_padding {
+    padding: 4vh;
+  }
+}
+
+@media(max-width: 576px) {
   .header_text {
     margin-top: -10vh;
   }
@@ -141,7 +166,6 @@
   .header_background_top {
     height: 30vh;
   }
-
   .header_background_bottom {
     height: 20vh;
   }

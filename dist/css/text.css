@@ -1,11 +1,21 @@
-#first_section_h1 {
+.first_section_h1 {
   color: #000f;
   font-family: 'Roboto Mono', monospace;
-  font-size: 2em;
+  font-size: 3vw;
+}
+
+.first_section_p {
+  color: #000f;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2vw;
 }
 
 @media(max-width: 576px) {
-  #first_section_h1 {
-    height: 3em;
+  .first_section_h1 {
+    font-size: 6vw;
+  }
+
+  .first_section_p {
+    font-size: 4vw;
   }
 }
