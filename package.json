@@ -9,9 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chrome-vh-fix": "file:///src/chrome-vh-fix.js",
     "ityped": "^1.0.1",
     "rellax": "^1.6.0",
-    "chrome-vh-fix": "file:///src/chrome-vh-fix.js"
+    "viewport-units-buggyfill": "^0.6.2"
   },
   "devDependencies": {
     "webpack": "^4.1.1",

@@ -2,11 +2,6 @@
 import Rellax from 'rellax';
 var rellax = new Rellax('.rellax');
 
-$(window).on('resize touchmove', function () {
-  console.log("bla");
-  $("#bg1").height(10);
-});
-
 // TEXT TYPER
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
