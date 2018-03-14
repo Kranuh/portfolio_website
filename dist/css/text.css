@@ -1,13 +1,13 @@
 .first_section_h1 {
   color: #000f;
   font-family: 'Roboto Mono', monospace;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .first_section_p {
   color: #000f;
   font-family: 'Roboto Mono', monospace;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 @media(max-width: 576px) {
